@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        font-family: 'Vazir';
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    h1,h2{
+        font-family: 'Lalezar';
+    }
+    body{
+        direction: rtl;
+    }
+    .member img, .member div , #projects div{
+        transition: 500ms;
+    }
+    .member div{
+        top: 50%;
+    }
+}
+@layer components{
+    .menu-item{
+        @apply lg:block hidden;
+    }
+}
